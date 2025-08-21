@@ -1,0 +1,8 @@
+downloadtest.py
+import_tweepy_video.py
+import_tweepy_video.pyc
+principal.py
+__pycache__/
+*.pyc
+/.venv       
+.idea/
