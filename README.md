@@ -29,24 +29,20 @@ downloader-video-py/
 │
 ├── src/                    # Código-fonte principal.
 │   ├── gui/           # Interface gráfica (Tkinter).
-│   │   ├── __init__.py
-│   │   └── main_window.py       # Código da janela principal
+│   │   └── principal.py       # Código da janela principal
 │   │
 │   ├── downloader/    # Lógica de download (Pytube).
-│   │   ├── __init__.py
-│   │   └── youtube_downloader.py
+│   │   └── downloadtest.py
 │   │
 │   ├── utils/                   # Funções auxiliares
-│   │   ├── __init__.py
 │   │   └── file_manager.py      # Gerenciamento de diretórios/arquivos.
-│   │
-│   └── app.py        # Ponto de entrada do programa.
+│  
 │
 ├── tests/                   # Testes automatizados. (pytest/unittest)
 │   ├── test_downloader.py
 │   └── test_utils.py
 │
-├── assets/            # Ícones, imagens, logos, etc.
+├── picture/            # Ícones, imagens, logos, etc.
 │
 ├── requirements.txt       # Dependências do projeto.
 ├── README.md                    # Documentação 
