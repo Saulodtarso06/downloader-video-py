@@ -24,11 +24,48 @@ Um aplicativo simples em **Python** para baixar vídeos do **YouTube** utilizand
 
 ## 📂 Estrutura do Projeto
 
+```
 downloader-video-py/
-│-- main.py # Código principal do programa
-│-- README.md # Documentação
-│-- requirements.txt # Dependências do projeto
+│
+├── src/                    # Código-fonte principal.
+│   ├── gui/           # Interface gráfica (Tkinter).
+│   │   ├── __init__.py
+│   │   └── main_window.py       # Código da janela principal
+│   │
+│   ├── downloader/    # Lógica de download (Pytube).
+│   │   ├── __init__.py
+│   │   └── youtube_downloader.py
+│   │
+│   ├── utils/                   # Funções auxiliares
+│   │   ├── __init__.py
+│   │   └── file_manager.py      # Gerenciamento de diretórios/arquivos.
+│   │
+│   └── app.py        # Ponto de entrada do programa.
+│
+├── tests/                   # Testes automatizados. (pytest/unittest)
+│   ├── test_downloader.py
+│   └── test_utils.py
+│
+├── assets/            # Ícones, imagens, logos, etc.
+│
+├── requirements.txt       # Dependências do projeto.
+├── README.md                    # Documentação 
+└── .gitignore    # Arquivos/pastas ignorados no Git.
 
+```
+### Legenda:
+
+* src/gui/ → interface gráfica com Tkinter.
+
+* src/downloader/ → lógica para baixar vídeos do YouTube (Pytube).
+
+* src/utils/ → funções auxiliares, como verificar caminhos e gerenciar arquivos.
+
+* tests/ → testes unitários para validar o funcionamento.
+
+* assets/ → ícones ou imagens para a interface.
+
+* app.py → ponto inicial que conecta GUI + lógica de download.
 ---
 
 ## ⚙️ Instalação
@@ -71,18 +108,51 @@ python main.py
 3. Escolha o diretório para salvar o arquivo.
 ---
 
-## 📸 Captura de Tela.
+## Captura da Tela Principal.
 
-(adicione aqui uma imagem da interface do programa, se desejar)
+<div align="center">
+  <img src="picture/painel.JPG" alt="Descrição da Imagem" width="300"/>
+</div>
+
+---
+
+### Mensagem de Download concluído.
+
+<div align="center">
+  <img src="picture/download-concluido.JPG" alt="download-concluido" width="300"/>
+</div>
+
+---
+
+### Mensagens de Erro:
+
+<div align="center">
+  <img src="picture/falha-download.JPG" alt="falha-download" width="300"/>
+</div>
+
+---
+
+<div align="center">
+  <img src="picture/link-invalido.JPG" alt="link-invalido" width="300"/>
+</div>
 
 ---
 
 ## Melhorias a serem implementadas:
 
-Suporte para download de playlists
+* Suporte para download de playlists
 
-Opção de extrair apenas o áudio (MP3)
+* Opção de extrair apenas o áudio (MP3)
 
-Barra de progresso em tempo real
+* Barra de progresso em tempo real
 
-Suporte a múltiplos downloads simultâneos
+* Suporte a múltiplos downloads simultâneos
+
+---
+## Autor do Projeto
+
+Feito por Saulo de Tarso - Desenvolvedor FullStack Jr 👨‍💻.
+
+GitHub: https://github.com/Saulodtarso06
+
+LinkedIn: https://www.linkedin.com/in/saulo-de-tarso-8a2b00133/
