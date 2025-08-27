@@ -133,6 +133,14 @@ python main.py
 </div>
 
 ---
+## Ultimas atualizações:
+
+* Adicionada barra de progresso (ttk.Progressbar)
+
+* Criado status_label para mensagens (“Baixando... XX%”, “Finalizado!”)
+
+* Implementado progress_hooks do yt-dlp para atualizar a barra e status
+---
 
 ## Melhorias a serem implementadas:
 
@@ -140,7 +148,7 @@ python main.py
 
 * Opção de extrair apenas o áudio (MP3)
 
-* Barra de progresso em tempo real
+* Barra de progresso em tempo real ✅
 
 * Suporte a múltiplos downloads simultâneos
 
